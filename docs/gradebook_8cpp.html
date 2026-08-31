@@ -83,57 +83,62 @@ $(function() {
 <p>Functions for the gradebook project.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;array&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for gradebook.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="gradebook_8cpp__incl.png" border="0" usemap="#asrc_2gradebook_8cpp" alt=""/></div>
 <map name="asrc_2gradebook_8cpp" id="asrc_2gradebook_8cpp">
-<area shape="rect" title="Functions for the gradebook project." alt="" coords="21,5,163,31"/>
+<area shape="rect" title="Functions for the gradebook project." alt="" coords="67,5,208,31"/>
 <area shape="rect" title=" " alt="" coords="5,79,85,104"/>
-<area shape="poly" title=" " alt="" coords="87,32,63,69,58,66,82,30"/>
-<area shape="rect" title=" " alt="" coords="109,79,168,104"/>
-<area shape="poly" title=" " alt="" coords="102,30,126,66,121,69,97,32"/>
+<area shape="poly" title=" " alt="" coords="124,33,73,72,69,68,121,29"/>
+<area shape="rect" title=" " alt="" coords="109,79,165,104"/>
+<area shape="poly" title=" " alt="" coords="140,31,140,65,135,65,135,31"/>
+<area shape="rect" title=" " alt="" coords="189,79,248,104"/>
+<area shape="poly" title=" " alt="" coords="152,29,197,68,193,72,149,33"/>
 </map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a78b123112fc2f5a0ee54b4fdedd36b04" id="r_a78b123112fc2f5a0ee54b4fdedd36b04"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gradebook_8cpp.html#a78b123112fc2f5a0ee54b4fdedd36b04">studentAverage</a> (double **scores, int studentIndex, int assignmentCount)</td></tr>
-<tr class="memdesc:a78b123112fc2f5a0ee54b4fdedd36b04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the selected students average.  <br /></td></tr>
-<tr class="separator:a78b123112fc2f5a0ee54b4fdedd36b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab81981932ab9083f977ebe5607e32e39" id="r_ab81981932ab9083f977ebe5607e32e39"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gradebook_8cpp.html#ab81981932ab9083f977ebe5607e32e39">assignmentAverage</a> (double **scores, int assignmentIndex, int studentCount)</td></tr>
-<tr class="memdesc:ab81981932ab9083f977ebe5607e32e39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the average of selected assignment.  <br /></td></tr>
-<tr class="separator:ab81981932ab9083f977ebe5607e32e39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0941e3a93c6d4c97d515a6cf4e906ca1" id="r_a0941e3a93c6d4c97d515a6cf4e906ca1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gradebook_8cpp.html#a0941e3a93c6d4c97d515a6cf4e906ca1">findExtremes</a> (double **scores, int studentIndex, int assignmentCount, double &amp;lowest, double &amp;highest)</td></tr>
-<tr class="memdesc:a0941e3a93c6d4c97d515a6cf4e906ca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the highest and lowest grades for a given student.  <br /></td></tr>
-<tr class="separator:a0941e3a93c6d4c97d515a6cf4e906ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7af21f89337953730644735d54276567" id="r_a7af21f89337953730644735d54276567"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gradebook_8cpp.html#a7af21f89337953730644735d54276567">studentAverage</a> (const std::array&lt; std::array&lt; double, <a class="el" href="gradebook_8cpp.html#abae6b32517f1913ffd0727a2dc906075">ASSIGNMENT_COUNT</a> &gt;, <a class="el" href="gradebook_8cpp.html#a7c103117f3a29319c8d0e6d78eba3583">STUDENT_COUNT</a> &gt; &amp;scores, int studentIndex, int assignmentCount)</td></tr>
+<tr class="memdesc:a7af21f89337953730644735d54276567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the selected students average.  <br /></td></tr>
+<tr class="separator:a7af21f89337953730644735d54276567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a3df844bc8374d7f56bbe15228b5abe" id="r_a3a3df844bc8374d7f56bbe15228b5abe"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gradebook_8cpp.html#a3a3df844bc8374d7f56bbe15228b5abe">assignmentAverage</a> (const std::array&lt; std::array&lt; double, <a class="el" href="gradebook_8cpp.html#abae6b32517f1913ffd0727a2dc906075">ASSIGNMENT_COUNT</a> &gt;, <a class="el" href="gradebook_8cpp.html#a7c103117f3a29319c8d0e6d78eba3583">STUDENT_COUNT</a> &gt; &amp;scores, int assignmentIndex, int studentCount)</td></tr>
+<tr class="memdesc:a3a3df844bc8374d7f56bbe15228b5abe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the average of selected assignment.  <br /></td></tr>
+<tr class="separator:a3a3df844bc8374d7f56bbe15228b5abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d53aca543a58822c364d09576c1a49a" id="r_a8d53aca543a58822c364d09576c1a49a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gradebook_8cpp.html#a8d53aca543a58822c364d09576c1a49a">findExtremes</a> (const std::array&lt; std::array&lt; double, <a class="el" href="gradebook_8cpp.html#abae6b32517f1913ffd0727a2dc906075">ASSIGNMENT_COUNT</a> &gt;, <a class="el" href="gradebook_8cpp.html#a7c103117f3a29319c8d0e6d78eba3583">STUDENT_COUNT</a> &gt; &amp;scores, int studentIndex, int assignmentCount, double &amp;lowest, double &amp;highest)</td></tr>
+<tr class="memdesc:a8d53aca543a58822c364d09576c1a49a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the highest and lowest grades for a given student.  <br /></td></tr>
+<tr class="separator:a8d53aca543a58822c364d09576c1a49a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e362d04d516afd69446671b042f690a" id="r_a8e362d04d516afd69446671b042f690a"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gradebook_8cpp.html#a8e362d04d516afd69446671b042f690a">letterGrade</a> (double average)</td></tr>
 <tr class="memdesc:a8e362d04d516afd69446671b042f690a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the letter grade from the numeric average.  <br /></td></tr>
 <tr class="separator:a8e362d04d516afd69446671b042f690a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a220f431996ab7ee34576ccbe220959a7" id="r_a220f431996ab7ee34576ccbe220959a7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gradebook_8cpp.html#a220f431996ab7ee34576ccbe220959a7">gradePoints</a> (char letter)</td></tr>
 <tr class="memdesc:a220f431996ab7ee34576ccbe220959a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the numeric gradepoints for the letter grade.  <br /></td></tr>
 <tr class="separator:a220f431996ab7ee34576ccbe220959a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4e49cd4401b4ba00b51dacc20799feb" id="r_ac4e49cd4401b4ba00b51dacc20799feb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gradebook_8cpp.html#ac4e49cd4401b4ba00b51dacc20799feb">countGrade</a> (double **scores, int studentCount, int assignmentCount, double target)</td></tr>
-<tr class="separator:ac4e49cd4401b4ba00b51dacc20799feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a721866cb29608d82cbbf4e771c217815" id="r_a721866cb29608d82cbbf4e771c217815"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gradebook_8cpp.html#a721866cb29608d82cbbf4e771c217815">classAverage</a> (double **scores, int studentCount, int assignmentCount)</td></tr>
-<tr class="separator:a721866cb29608d82cbbf4e771c217815"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae92ccf564ce0c40257554592bd053412" id="r_ae92ccf564ce0c40257554592bd053412"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gradebook_8cpp.html#ae92ccf564ce0c40257554592bd053412">hasPerfectScore</a> (double **scores, int studentIndex, int assignmentCount)</td></tr>
-<tr class="separator:ae92ccf564ce0c40257554592bd053412"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdf37a09eb729a5e0bffef7be8326b66" id="r_acdf37a09eb729a5e0bffef7be8326b66"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gradebook_8cpp.html#acdf37a09eb729a5e0bffef7be8326b66">isAtRisk</a> (double **scores, int studentIndex, int assignmentCount)</td></tr>
-<tr class="separator:acdf37a09eb729a5e0bffef7be8326b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa171fd19718760daff403733f0dee39" id="r_afa171fd19718760daff403733f0dee39"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gradebook_8cpp.html#afa171fd19718760daff403733f0dee39">countGrade</a> (const std::array&lt; std::array&lt; double, <a class="el" href="gradebook_8cpp.html#abae6b32517f1913ffd0727a2dc906075">ASSIGNMENT_COUNT</a> &gt;, <a class="el" href="gradebook_8cpp.html#a7c103117f3a29319c8d0e6d78eba3583">STUDENT_COUNT</a> &gt; &amp;scores, int studentCount, int assignmentCount, char target)</td></tr>
+<tr class="memdesc:afa171fd19718760daff403733f0dee39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns how many students earned target letter grade.  <br /></td></tr>
+<tr class="separator:afa171fd19718760daff403733f0dee39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f9cbdf41cea377ca2c71928a1f1abd0" id="r_a5f9cbdf41cea377ca2c71928a1f1abd0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gradebook_8cpp.html#a5f9cbdf41cea377ca2c71928a1f1abd0">classAverage</a> (const std::array&lt; std::array&lt; double, <a class="el" href="gradebook_8cpp.html#abae6b32517f1913ffd0727a2dc906075">ASSIGNMENT_COUNT</a> &gt;, <a class="el" href="gradebook_8cpp.html#a7c103117f3a29319c8d0e6d78eba3583">STUDENT_COUNT</a> &gt; &amp;scores, int studentCount, int assignmentCount)</td></tr>
+<tr class="memdesc:a5f9cbdf41cea377ca2c71928a1f1abd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the class average across all.  <br /></td></tr>
+<tr class="separator:a5f9cbdf41cea377ca2c71928a1f1abd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1940609a38e6867ef699ed5df1daadaf" id="r_a1940609a38e6867ef699ed5df1daadaf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gradebook_8cpp.html#a1940609a38e6867ef699ed5df1daadaf">hasPerfectScore</a> (const std::array&lt; std::array&lt; double, <a class="el" href="gradebook_8cpp.html#abae6b32517f1913ffd0727a2dc906075">ASSIGNMENT_COUNT</a> &gt;, <a class="el" href="gradebook_8cpp.html#a7c103117f3a29319c8d0e6d78eba3583">STUDENT_COUNT</a> &gt; &amp;scores, int studentIndex, int assignmentCount)</td></tr>
+<tr class="separator:a1940609a38e6867ef699ed5df1daadaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0137dfc61e9cbce2e4ae192949741fdd" id="r_a0137dfc61e9cbce2e4ae192949741fdd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gradebook_8cpp.html#a0137dfc61e9cbce2e4ae192949741fdd">isAtRisk</a> (const std::array&lt; std::array&lt; double, <a class="el" href="gradebook_8cpp.html#abae6b32517f1913ffd0727a2dc906075">ASSIGNMENT_COUNT</a> &gt;, <a class="el" href="gradebook_8cpp.html#a7c103117f3a29319c8d0e6d78eba3583">STUDENT_COUNT</a> &gt; &amp;scores, int studentIndex, int assignmentCount)</td></tr>
+<tr class="separator:a0137dfc61e9cbce2e4ae192949741fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8eab9cd06692dcc337484906e31d6149" id="r_a8eab9cd06692dcc337484906e31d6149"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gradebook_8cpp.html#a8eab9cd06692dcc337484906e31d6149">initialsOf</a> (std::string fullName)</td></tr>
 <tr class="separator:a8eab9cd06692dcc337484906e31d6149"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a69de0986c11a9612c136299ab2a8f6" id="r_a9a69de0986c11a9612c136299ab2a8f6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gradebook_8cpp.html#a9a69de0986c11a9612c136299ab2a8f6">padName</a> (std::string fullName, int width)</td></tr>
 <tr class="separator:a9a69de0986c11a9612c136299ab2a8f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3282018479b369af41499fc67416beb6" id="r_a3282018479b369af41499fc67416beb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gradebook_8cpp.html#a3282018479b369af41499fc67416beb6">printHeader</a> (int assignmentCount)</td></tr>
 <tr class="separator:a3282018479b369af41499fc67416beb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a880c484237c6bf10fd007f3acd7ad3bf" id="r_a880c484237c6bf10fd007f3acd7ad3bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gradebook_8cpp.html#a880c484237c6bf10fd007f3acd7ad3bf">printStudentRow</a> (std::string *names, double **scores, int studentIndex, int assignmentCount)</td></tr>
-<tr class="separator:a880c484237c6bf10fd007f3acd7ad3bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8742c74e6b421541749c7f8899d9acba" id="r_a8742c74e6b421541749c7f8899d9acba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gradebook_8cpp.html#a8742c74e6b421541749c7f8899d9acba">printHistogram</a> (double **scores, std::string *names, int studentCount, int assignmentCount)</td></tr>
-<tr class="separator:a8742c74e6b421541749c7f8899d9acba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad22ef01f4532b5c6bc5b39c75f4eb899" id="r_ad22ef01f4532b5c6bc5b39c75f4eb899"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gradebook_8cpp.html#ad22ef01f4532b5c6bc5b39c75f4eb899">printAssignmentSummary</a> (double **scores, int studentCount, int assignmentCount)</td></tr>
-<tr class="separator:ad22ef01f4532b5c6bc5b39c75f4eb899"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a251bb1b2270ae8834af9df07cb75d781" id="r_a251bb1b2270ae8834af9df07cb75d781"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gradebook_8cpp.html#a251bb1b2270ae8834af9df07cb75d781">printStudentRow</a> (const std::array&lt; std::string, <a class="el" href="gradebook_8cpp.html#a7c103117f3a29319c8d0e6d78eba3583">STUDENT_COUNT</a> &gt; &amp;names, const std::array&lt; std::array&lt; double, <a class="el" href="gradebook_8cpp.html#abae6b32517f1913ffd0727a2dc906075">ASSIGNMENT_COUNT</a> &gt;, <a class="el" href="gradebook_8cpp.html#a7c103117f3a29319c8d0e6d78eba3583">STUDENT_COUNT</a> &gt; &amp;scores, int studentIndex, int assignmentCount)</td></tr>
+<tr class="separator:a251bb1b2270ae8834af9df07cb75d781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dcfbf19463dff763293f6ed5de03b49" id="r_a0dcfbf19463dff763293f6ed5de03b49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gradebook_8cpp.html#a0dcfbf19463dff763293f6ed5de03b49">printHistogram</a> (const std::array&lt; std::array&lt; double, <a class="el" href="gradebook_8cpp.html#abae6b32517f1913ffd0727a2dc906075">ASSIGNMENT_COUNT</a> &gt;, <a class="el" href="gradebook_8cpp.html#a7c103117f3a29319c8d0e6d78eba3583">STUDENT_COUNT</a> &gt; &amp;scores, const std::array&lt; std::string, <a class="el" href="gradebook_8cpp.html#a7c103117f3a29319c8d0e6d78eba3583">STUDENT_COUNT</a> &gt; &amp;names, int studentCount, int assignmentCount)</td></tr>
+<tr class="separator:a0dcfbf19463dff763293f6ed5de03b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3975f30394f478e75976ff35266533c" id="r_ad3975f30394f478e75976ff35266533c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gradebook_8cpp.html#ad3975f30394f478e75976ff35266533c">printAssignmentSummary</a> (const std::array&lt; std::array&lt; double, <a class="el" href="gradebook_8cpp.html#abae6b32517f1913ffd0727a2dc906075">ASSIGNMENT_COUNT</a> &gt;, <a class="el" href="gradebook_8cpp.html#a7c103117f3a29319c8d0e6d78eba3583">STUDENT_COUNT</a> &gt; &amp;scores, int studentCount, int assignmentCount)</td></tr>
+<tr class="separator:ad3975f30394f478e75976ff35266533c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada72d61ca5130daf2f8573e78f7fde64" id="r_ada72d61ca5130daf2f8573e78f7fde64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gradebook_8cpp.html#ada72d61ca5130daf2f8573e78f7fde64">printRoster</a> (std::string names, int studentCount)</td></tr>
 <tr class="separator:ada72d61ca5130daf2f8573e78f7fde64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627" id="r_a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gradebook_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
@@ -154,8 +159,8 @@ Variables</h2></td></tr>
 <dl class="section date"><dt>Date</dt><dd>2026-08-31 </dd></dl>
 <p>This file is the implementation of all the gradebook functions for this project. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="ab81981932ab9083f977ebe5607e32e39" name="ab81981932ab9083f977ebe5607e32e39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab81981932ab9083f977ebe5607e32e39">&#9670;&#160;</a></span>assignmentAverage()</h2>
+<a id="a3a3df844bc8374d7f56bbe15228b5abe" name="a3a3df844bc8374d7f56bbe15228b5abe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a3df844bc8374d7f56bbe15228b5abe">&#9670;&#160;</a></span>assignmentAverage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -163,7 +168,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">double assignmentAverage </td>
           <td>(</td>
-          <td class="paramtype">double **&#160;</td>
+          <td class="paramtype">const std::array&lt; std::array&lt; double, <a class="el" href="gradebook_8cpp.html#abae6b32517f1913ffd0727a2dc906075">ASSIGNMENT_COUNT</a> &gt;, <a class="el" href="gradebook_8cpp.html#a7c103117f3a29319c8d0e6d78eba3583">STUDENT_COUNT</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>scores</em>, </td>
         </tr>
         <tr>
@@ -187,10 +192,15 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Determines the average of selected assignment. </p>
-<p>This function loops through the student scores of the specified assignment and calculates the average of the scores stored.</p>
+<p>This function loops through the student&amp; scores of the specified assignment and calculates the average of the&amp; scores stored.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">scores</td><td>The array of student/assignment scores </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>scores The array of student/assignment&amp; scores </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">assignmentIndex</td><td>The index of the assignment to generate the average for </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">studentCount</td><td>The number of students to iterate through </td></tr>
   </table>
@@ -200,8 +210,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a721866cb29608d82cbbf4e771c217815" name="a721866cb29608d82cbbf4e771c217815"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a721866cb29608d82cbbf4e771c217815">&#9670;&#160;</a></span>classAverage()</h2>
+<a id="a5f9cbdf41cea377ca2c71928a1f1abd0" name="a5f9cbdf41cea377ca2c71928a1f1abd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f9cbdf41cea377ca2c71928a1f1abd0">&#9670;&#160;</a></span>classAverage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -209,7 +219,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">double classAverage </td>
           <td>(</td>
-          <td class="paramtype">double **&#160;</td>
+          <td class="paramtype">const std::array&lt; std::array&lt; double, <a class="el" href="gradebook_8cpp.html#abae6b32517f1913ffd0727a2dc906075">ASSIGNMENT_COUNT</a> &gt;, <a class="el" href="gradebook_8cpp.html#a7c103117f3a29319c8d0e6d78eba3583">STUDENT_COUNT</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>scores</em>, </td>
         </tr>
         <tr>
@@ -232,10 +242,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Returns the class average across all. </p>
+
 </div>
 </div>
-<a id="ac4e49cd4401b4ba00b51dacc20799feb" name="ac4e49cd4401b4ba00b51dacc20799feb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4e49cd4401b4ba00b51dacc20799feb">&#9670;&#160;</a></span>countGrade()</h2>
+<a id="afa171fd19718760daff403733f0dee39" name="afa171fd19718760daff403733f0dee39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa171fd19718760daff403733f0dee39">&#9670;&#160;</a></span>countGrade()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -243,7 +255,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">int countGrade </td>
           <td>(</td>
-          <td class="paramtype">double **&#160;</td>
+          <td class="paramtype">const std::array&lt; std::array&lt; double, <a class="el" href="gradebook_8cpp.html#abae6b32517f1913ffd0727a2dc906075">ASSIGNMENT_COUNT</a> &gt;, <a class="el" href="gradebook_8cpp.html#a7c103117f3a29319c8d0e6d78eba3583">STUDENT_COUNT</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>scores</em>, </td>
         </tr>
         <tr>
@@ -261,7 +273,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">char&#160;</td>
           <td class="paramname"><em>target</em>&#160;</td>
         </tr>
         <tr>
@@ -272,10 +284,21 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Returns how many students earned target letter grade. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">scores</td><td>The array of student/assignment&amp; scores </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">studentCount</td><td>The number of students to iterate through </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">assignmentCount</td><td>The number of assignments to iterate through </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">target</td><td>The letter grade to look for </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a0941e3a93c6d4c97d515a6cf4e906ca1" name="a0941e3a93c6d4c97d515a6cf4e906ca1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0941e3a93c6d4c97d515a6cf4e906ca1">&#9670;&#160;</a></span>findExtremes()</h2>
+<a id="a8d53aca543a58822c364d09576c1a49a" name="a8d53aca543a58822c364d09576c1a49a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d53aca543a58822c364d09576c1a49a">&#9670;&#160;</a></span>findExtremes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -283,7 +306,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void findExtremes </td>
           <td>(</td>
-          <td class="paramtype">double **&#160;</td>
+          <td class="paramtype">const std::array&lt; std::array&lt; double, <a class="el" href="gradebook_8cpp.html#abae6b32517f1913ffd0727a2dc906075">ASSIGNMENT_COUNT</a> &gt;, <a class="el" href="gradebook_8cpp.html#a7c103117f3a29319c8d0e6d78eba3583">STUDENT_COUNT</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>scores</em>, </td>
         </tr>
         <tr>
@@ -322,9 +345,14 @@ Variables</h2></td></tr>
 <p>Iterates through all assignments and finds the highest and lowest assignment grades for a given student.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">scores</td><td>The array of student/assignment scores </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>scores The array of student/assignment&amp; scores </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">studentIndex</td><td>The index of the student to find the grades for </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">assignmentCount</td><td>The number of assignments in the scores array </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">assignmentCount</td><td>The number of assignments in the&amp; scores array </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">lowest</td><td>Variable passed by reference to contain the lowest score </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">highest</td><td>Variable passed by reference to contain the highest score </td></tr>
   </table>
@@ -360,8 +388,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ae92ccf564ce0c40257554592bd053412" name="ae92ccf564ce0c40257554592bd053412"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae92ccf564ce0c40257554592bd053412">&#9670;&#160;</a></span>hasPerfectScore()</h2>
+<a id="a1940609a38e6867ef699ed5df1daadaf" name="a1940609a38e6867ef699ed5df1daadaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1940609a38e6867ef699ed5df1daadaf">&#9670;&#160;</a></span>hasPerfectScore()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -369,7 +397,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">bool hasPerfectScore </td>
           <td>(</td>
-          <td class="paramtype">double **&#160;</td>
+          <td class="paramtype">const std::array&lt; std::array&lt; double, <a class="el" href="gradebook_8cpp.html#abae6b32517f1913ffd0727a2dc906075">ASSIGNMENT_COUNT</a> &gt;, <a class="el" href="gradebook_8cpp.html#a7c103117f3a29319c8d0e6d78eba3583">STUDENT_COUNT</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>scores</em>, </td>
         </tr>
         <tr>
@@ -412,8 +440,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="acdf37a09eb729a5e0bffef7be8326b66" name="acdf37a09eb729a5e0bffef7be8326b66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdf37a09eb729a5e0bffef7be8326b66">&#9670;&#160;</a></span>isAtRisk()</h2>
+<a id="a0137dfc61e9cbce2e4ae192949741fdd" name="a0137dfc61e9cbce2e4ae192949741fdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0137dfc61e9cbce2e4ae192949741fdd">&#9670;&#160;</a></span>isAtRisk()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -421,7 +449,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">bool isAtRisk </td>
           <td>(</td>
-          <td class="paramtype">double **&#160;</td>
+          <td class="paramtype">const std::array&lt; std::array&lt; double, <a class="el" href="gradebook_8cpp.html#abae6b32517f1913ffd0727a2dc906075">ASSIGNMENT_COUNT</a> &gt;, <a class="el" href="gradebook_8cpp.html#a7c103117f3a29319c8d0e6d78eba3583">STUDENT_COUNT</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>scores</em>, </td>
         </tr>
         <tr>
@@ -530,8 +558,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad22ef01f4532b5c6bc5b39c75f4eb899" name="ad22ef01f4532b5c6bc5b39c75f4eb899"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad22ef01f4532b5c6bc5b39c75f4eb899">&#9670;&#160;</a></span>printAssignmentSummary()</h2>
+<a id="ad3975f30394f478e75976ff35266533c" name="ad3975f30394f478e75976ff35266533c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3975f30394f478e75976ff35266533c">&#9670;&#160;</a></span>printAssignmentSummary()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -539,7 +567,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void printAssignmentSummary </td>
           <td>(</td>
-          <td class="paramtype">double **&#160;</td>
+          <td class="paramtype">const std::array&lt; std::array&lt; double, <a class="el" href="gradebook_8cpp.html#abae6b32517f1913ffd0727a2dc906075">ASSIGNMENT_COUNT</a> &gt;, <a class="el" href="gradebook_8cpp.html#a7c103117f3a29319c8d0e6d78eba3583">STUDENT_COUNT</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>scores</em>, </td>
         </tr>
         <tr>
@@ -582,8 +610,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a8742c74e6b421541749c7f8899d9acba" name="a8742c74e6b421541749c7f8899d9acba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8742c74e6b421541749c7f8899d9acba">&#9670;&#160;</a></span>printHistogram()</h2>
+<a id="a0dcfbf19463dff763293f6ed5de03b49" name="a0dcfbf19463dff763293f6ed5de03b49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dcfbf19463dff763293f6ed5de03b49">&#9670;&#160;</a></span>printHistogram()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -591,13 +619,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void printHistogram </td>
           <td>(</td>
-          <td class="paramtype">double **&#160;</td>
+          <td class="paramtype">const std::array&lt; std::array&lt; double, <a class="el" href="gradebook_8cpp.html#abae6b32517f1913ffd0727a2dc906075">ASSIGNMENT_COUNT</a> &gt;, <a class="el" href="gradebook_8cpp.html#a7c103117f3a29319c8d0e6d78eba3583">STUDENT_COUNT</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>scores</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string *&#160;</td>
+          <td class="paramtype">const std::array&lt; std::string, <a class="el" href="gradebook_8cpp.html#a7c103117f3a29319c8d0e6d78eba3583">STUDENT_COUNT</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>names</em>, </td>
         </tr>
         <tr>
@@ -650,8 +678,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a880c484237c6bf10fd007f3acd7ad3bf" name="a880c484237c6bf10fd007f3acd7ad3bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a880c484237c6bf10fd007f3acd7ad3bf">&#9670;&#160;</a></span>printStudentRow()</h2>
+<a id="a251bb1b2270ae8834af9df07cb75d781" name="a251bb1b2270ae8834af9df07cb75d781"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a251bb1b2270ae8834af9df07cb75d781">&#9670;&#160;</a></span>printStudentRow()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -659,13 +687,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void printStudentRow </td>
           <td>(</td>
-          <td class="paramtype">std::string *&#160;</td>
+          <td class="paramtype">const std::array&lt; std::string, <a class="el" href="gradebook_8cpp.html#a7c103117f3a29319c8d0e6d78eba3583">STUDENT_COUNT</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>names</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double **&#160;</td>
+          <td class="paramtype">const std::array&lt; std::array&lt; double, <a class="el" href="gradebook_8cpp.html#abae6b32517f1913ffd0727a2dc906075">ASSIGNMENT_COUNT</a> &gt;, <a class="el" href="gradebook_8cpp.html#a7c103117f3a29319c8d0e6d78eba3583">STUDENT_COUNT</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>scores</em>, </td>
         </tr>
         <tr>
@@ -690,8 +718,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a78b123112fc2f5a0ee54b4fdedd36b04" name="a78b123112fc2f5a0ee54b4fdedd36b04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78b123112fc2f5a0ee54b4fdedd36b04">&#9670;&#160;</a></span>studentAverage()</h2>
+<a id="a7af21f89337953730644735d54276567" name="a7af21f89337953730644735d54276567"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7af21f89337953730644735d54276567">&#9670;&#160;</a></span>studentAverage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -699,7 +727,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">double studentAverage </td>
           <td>(</td>
-          <td class="paramtype">double **&#160;</td>
+          <td class="paramtype">const std::array&lt; std::array&lt; double, <a class="el" href="gradebook_8cpp.html#abae6b32517f1913ffd0727a2dc906075">ASSIGNMENT_COUNT</a> &gt;, <a class="el" href="gradebook_8cpp.html#a7c103117f3a29319c8d0e6d78eba3583">STUDENT_COUNT</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>scores</em>, </td>
         </tr>
         <tr>
@@ -723,10 +751,15 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Calculates the selected students average. </p>
-<p>This function takes the scores 2d array and calculates the student's average.</p>
+<p>This function takes the&amp; scores 2d array and calculates the student's average.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">scores</td><td>The array of student/assignment scores </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>scores The array of student/assignment&amp; scores </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">studentIndex</td><td>Index of the row of student data </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">assignmentCount</td><td>Number of assignments to iterate through </td></tr>
   </table>
